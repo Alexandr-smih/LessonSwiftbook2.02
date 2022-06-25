@@ -16,11 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="q29-AC-GXo">
+                                <rect key="frame" x="157" y="98" width="100" height="348"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wx4-7s-Loz">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wx4-7s-Loz" secondAttribute="height" multiplier="1:1" id="q0j-AL-b0v"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-vR-zZD">
+                                        <rect key="frame" x="0.0" y="124" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcb-nG-sfz">
+                                        <rect key="frame" x="0.0" y="248" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" distribution="fillEqually"/>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWv-ms-fh0">
-                                <rect key="frame" x="119.5" y="742" width="175" height="60"/>
+                                <rect key="frame" x="140.5" y="702" width="133" height="60"/>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="IiQ-Qj-jS5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="FrY-kJ-efO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -31,42 +52,15 @@
                                     <action selector="switchButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="NaC-Z2-XIB"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcb-nG-sfz">
-                                <rect key="frame" x="157" y="340" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kEs-vR-zZD">
-                                <rect key="frame" x="157" y="220" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wx4-7s-Loz">
-                                <rect key="frame" x="157" y="98" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yWv-ms-fh0" secondAttribute="bottom" constant="60" id="IbZ-F0-EqV"/>
-                            <constraint firstItem="yWv-ms-fh0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q4X-an-eiU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yWv-ms-fh0" secondAttribute="bottom" constant="100" id="1bi-Nk-JUy"/>
+                            <constraint firstItem="yWv-ms-fh0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C5H-bx-J8M"/>
+                            <constraint firstItem="q29-AC-GXo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="GNI-0I-y9S"/>
+                            <constraint firstItem="q29-AC-GXo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VD9-KU-DVB"/>
+                            <constraint firstItem="q29-AC-GXo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.388393" id="fhe-jw-Ij2"/>
                         </constraints>
                     </view>
                     <connections>
